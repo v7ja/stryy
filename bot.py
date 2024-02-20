@@ -26,7 +26,7 @@ async def StrPychecker(event):
         type = str(msg[0])
       
         username = await rando(type)
-        await event.reply(f"تم البدأ على النوع  - {type}")
+        await event.reply(f"Done Start On This Type  - {type}")
 
         while True:
                 clicks += 1
@@ -43,12 +43,12 @@ async def StrPychecker(event):
                         try:
                         	await StrPython(functions.account.UpdateUsernameRequest(username=username))           
                         
-                        	await StrPython.send_file(event.chat_id, "https://t.me/x_YaBh/7",caption=f'''
-Good evening 🗽
+                        	await StrPython.send_file(event.chat_id, "https://t.me/m_aBd/14",caption=f'''
+DoNe Cliem 
 ⌯ User ⤷ @{username}
 ⌯ Save ⤷ Account
 ⌯ Clicks ⤷ {clicks}
-⌯ Program the bot ⤷ @FIood_1500''')
+⌯ Program ⤷ @kckkkkc''')
                         	os.remove("clicks.txt")
                         	break
                         except Exception as USFL:
@@ -57,7 +57,7 @@ Good evening 🗽
                         continue                    
                         
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
-                    	await StrPython.send_message(event.chat_id,f"User is band 🥴 : {username}")
+                    	await StrPython.send_message(event.chat_id,f"User is band  : {username}")
                     	band.append(username)
                     	
                 except telethon.errors.rpcerrorlist.UsernameOccupiedError:
@@ -77,9 +77,6 @@ Good evening 🗽
                    break
                    
        
-#  تخمط دليل فشلك 🤨
-#تيم ستار بايثون 🗽
-
 ban = open("band.txt","r").read().split()
 band.append(ban)
 
@@ -87,10 +84,10 @@ abcd = "qwertyuiopassdfghjklzxcvbnm"
 number = "1234567890"
 
 async def rando(type):
-	if type == "خماسيات-3":
+	if type == "#X***":
 		q = random.choices(abcd)
 		w = random.choices(abcd)
-		user = ["vip",q[0],w[0]]
+		user =[w[0],"x",q[0],q[0],q[0]]
 		username = "".join(user)
 		
 		if username in band[0]:
@@ -101,10 +98,10 @@ async def rando(type):
 			pass
 		else:pass
 		return username
-	if type == "خماسيات":
+	if type == "x#***":
 		q = random.choices(abcd)
 		w = random.choices(abcd)
-		user = [q[0],q[0],q[0],q[0],w[0]]
+		user = ["x",w[0],q[0],q[0],q[0]]
 		username = "".join(user)
 		if username in band[0]:
 			pass
@@ -114,11 +111,11 @@ async def rando(type):
 			pass
 		else:pass
 		return username
-	if type == "ثلاثيات":
+	if type == "##**#*":
 		q = random.choices(abcd)
 		w = random.choices(abcd)
 		b = random.choices(abcd)
-		user = [q[0],"_",b[0],"_",w[0]]
+		user =[q[0],q[0],w[0],w[0],q[0],w[0]]
 		username = "".join(user)
 		
 		
@@ -126,10 +123,10 @@ async def rando(type):
 			pass
 		else:pass
 		return username
-	if type == "سداسيات":
+	if type == "###**#":
 		q = random.choices(abcd)
 		w = random.choices(abcd)
-		user = [q[0],q[0],q[0],w[0],w[0],w[0]]
+		user = [q[0],q[0],q[0],w[0],w[0],q[0]]
 		username = "".join(user)
 		return username
 		if username in band[0]:
@@ -154,12 +151,12 @@ async def rando(type):
 			pass
 		else:pass
 		return username
-	if type == "a3":
+	if type == "wq***":
 		q = random.choice(abcd)
 		w = random.choice(abcd)
 		nu = random.choices(number)
 		num = random.choices(number)
-		user = [q[0],q[0],q[0],nu[0],num[0]]
+		user = [w[0],q[0],nu[0],nu[0],nu[0]]
 		username = "".join(user)
 		if username in band[0]:
 			pass
@@ -204,15 +201,14 @@ async def rando(type):
 
 @StrPython.on(events.NewMessage(outgoing=True, pattern=r"تشغيل الحجز"))
 async def Shhtah(event):
-	await event.reply(""" 
-اهلا بك ، لتشغيل الحجز قم بتحديد النوع اولا 🗽
+	await event.reply(""" Welcome Selict Type
 **لصيد ثلاثي بوت :** `حجز بوتات`
 **لصيد رباعي بوت :** `حجز بوت`
-**لصيد خماسي rm177 :** `حجز a3`
-**لصيد خماسي :** `حجز خماسيات`
-**لصيد سداسي :**  `حجز سداسيات`
-**لصيد ثلاثي :** `حجز ثلاثيات`
-**لصيد vip : **`حجز خماسيات-3`
+**لصيد ثلاثي ارقام :** `حجز wq***`
+**لصيد XLYYY :** `حجز #x***`
+**لصيد سداسي :**  `حجز ###**#`
+**لصيد ثلاثي :** `حجز ###**#`
+**لصيد LXYYY : **`حجز x#***`
 **للتجربه : **`حجز تيست`
 
 """)
@@ -241,8 +237,8 @@ for x in StrPython.iter_dialogs():
 				try:
 					StrPython.send_message(too, msg)
 				except BaseException:continue
-StrPython.send_file("me","https://t.me/x_YaBh/8",caption=f"""**مرحبا بك في سورس تشيكر !
-تابع لـ[YaBh](t.me/FIood_1500) .
+StrPython.send_file("me","https://t.me/m_aBd/15",caption=f"""**Welcome To checker
+bY [aBooD] (t.me/kckkkkc) .
 *اليك الاوامر ادناة* .
 `الأمر الاول : `ايقاف الحجز
 `الأمر الثاني : `تشغيل الحجز
